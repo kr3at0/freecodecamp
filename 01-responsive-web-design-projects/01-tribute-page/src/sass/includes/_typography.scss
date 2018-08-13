@@ -8,6 +8,7 @@
 body {
 	font-family: Raleway, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	@include font(body);
+	font-variant-ligatures: common-ligatures;
 }
 
 h1 {
