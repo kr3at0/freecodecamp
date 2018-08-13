@@ -1,14 +1,14 @@
-"use strict";
+'use strict';
 
-var gulp = require('gulp'),
-  path = require('path'),
-  data = require('gulp-data'),
-  pug = require('gulp-pug'),
-  prefix = require('gulp-autoprefixer'),
-  sass = require('gulp-sass'),
-  browserSync = require('browser-sync');
+import gulp from 'gulp';
+import path from 'path';
+import data from 'gulp-data';
+import pug from 'gulp-pug';
+import prefix from 'gulp-autoprefixer';
+import sass from 'gulp-sass';
+import browserSync from 'browser-sync';
 
-var paths = {
+const paths = {
   public: './public/',
   sass: './src/sass/',
   css: './public/css/',
