@@ -1,0 +1,48 @@
+extends _layouts/home
+
+block head_end
+    link(rel="stylesheet" href="/css/style.css") 
+
+block content
+    div(class="wrapper")
+        include _partials/header
+        div(class="panel")
+            h4 Timeline 
+            dl
+                each event in timeline
+                    dt= event.date
+                    dd= event.description 
+        div(class="content")
+            figure
+                img(class='main-picture' src='./img/feynman.jpg' alt='Richard Feynman')
+                figcaption Richard Feynman lecturing at California State University, Long Beach, in 1979. Credit: Caltech Archives
+            blockquote
+                p Source: 
+                    a(href="https://www.nature.com/articles/d41586-018-05082-4") Richard Feynman at 100
+                p Nature 557, 164-165 (2018)
+                p doi: 10.1038/d41586-018-05082-4
+            p A pre-eminent twentieth-century physicist and a Nobel laureate: Richard Feynman was certainly those. He was also much more. As the centenary of his birth rolls around on 11 May, a look at his scientific and cultural legacy recalls his restless multidimensionality. His popular books shattered readers’ preconceptions of scientists as lab-coated nerds and replaced them with a hipper image of a wild non-conformist; his scholarly tomes introduced researchers to revolutionary methods of grappling with modern physics.
+            p Feynman was a master conjuror of physics. A mathematical whizz with exceptional intuition, he seemed to pull solutions out of thin air. He crafted a lexicon for particle interactions: iconic squiggles, loops and lines now known as Feynman diagrams (see D. Cressey Nature 489, 207; 2012). His Nobel-prizewinning work on quantum electrodynamics included methods that even he saw as a sleight-of-hand for removing infinite terms from calculations. Yet, his results — equivalent to more systematic, rigorously expounded mathematical techniques independently proposed by co-laureates Julian Schwinger and Sin-Itiro Tomonaga — matched atomic-physics data beautifully.
+            p Decades before his 1965 Nobel Prize, Feynman was already a legend of the Manhattan Project at Los Alamos, New Mexico, where he helped develop the atomic bomb. His colleagues and supervisors, including scientific director J. Robert Oppenheimer and head of the theoretical division Hans Bethe, were stunned by his computational abilities.
+            div(class="quote")
+                p The first principle is that you must not fool yourself and you are the easiest person to fool.
+            p Then there was the playfulness. His pranks, including safe-cracking and sneaking through security fences, and his passion for playing the bongos, were arguably as memorable as his science. Feynman loved telling stories about himself and observing the reaction — the more stunned, amused or horrified the better. In the 1980s, his friend and fellow drummer Ralph Leighton collected some of them in two bestselling volumes: Surely You’re Joking, Mr. Feynman! (1985) and What Do You Care What Other People Think? (1988).
+            h2 Playful spirit
+            p In the first, Feynman flaunted his rough edges and eccentricities, and much of the book is hilarious. (One story sees him bungling a sprinkler experiment in the cyclotron laboratory at Princeton University in New Jersey, shattering glass tubes and flooding the space with water.) The chronicles of Feynman’s Los Alamos days are exceptionally funny, such as his removal of the secret contents of physicist Edward Teller’s locked desk drawer after Teller told him it was impenetrable. However, the book shows its age in disturbingly sexist sections such as “You just ask them?”, about his predatory behaviour towards women.
+            p His relationships with women were complicated. In What Do You Care, he explained how he encouraged his younger sister Joan, now an acclaimed astrophysicist, to go into science. And he recounted how many of his attitudes had been shaped by his love for his first wife, Arline, who died of tuberculosis in 1945, a few years after they married. Those stories were mostly written during the final stages of Feynman’s life, after he had undergone treatment for cancer. By that point he had undoubtedly become more cognizant of his legacy.
+            div(class="quote")
+                p Physics is like sex: sure, it may give some practical results, but that's not why we do it.
+            p Indeed, beneath his clown’s guise, Feynman was a sensitive man, suffering from both early grief and considerable anguish about the atomic weapons he had helped engender. These demons stymied his research from the end of the Second World War until 1947, when findings reported at the Shelter Island Conference in New York helped to spark his Nobel-prizewinning work. At the meeting, physicist Willis Lamb presented evidence of a discrepancy between predictions for certain energy levels of the hydrogen atom, calculated using the Dirac equation, and experimental results obtained using microwaves to excite the atom. Inspired by Bethe’s quick calculation of this Lamb shift, Feynman developed techniques to solve that problem and beyond, to the widest range of quantum electrodynamic interactions between charged particles.
+            h2 Golden years
+            p The next two years proved extremely productive in disseminating his extraordinary methods for calculating interactions in particle physics. Feynman published seminal papers such as ‘Classical electrodynamics in terms of direct interparticle action’ (J. A. Wheeler and R. P. Feynman Rev. Mod. Phys. 21, 425–433; 1949) and ‘Space-time approach to quantum electrodynamics’ (R. P. Feynman Phys. Rev. 76, 769–789; 1949). These build on each other like revelations in a Sherlock Holmes story — with the last supplying a complete resolution of how electrons interact using photons. Through his diagrams, which surprisingly depict positively charged positrons as electrons moving backward in time, Feynman portrayed the gamut of possible modes of interaction, each contributing to the total picture in a weighted tally called “sum over histories”. In his brilliant vision, quantum reality is a cloud-like smear of particles’ possible paths, as if a commuter from Essex to London could travel the entire route by train, coach, car and bicycle simultaneously.
+            p Feynman published two excellent primers introducing these quantum methods. Quantum Mechanics and Path Integrals (1965; co-authored with Albert Hibbs) begins with one of his favourite apparatuses, the double-slit experiment, and quickly moves into path integration and other advanced methods. The second, QED (1985; based on a lecture series) is more accessible — explaining the same theory using diagrams and examples.
+            p Starting in the 1950s, Feynman ventured into many other areas of theoretical physics: superfluids, superconductivity, gravitation and the constituents of protons and neutrons, which he called partons. Two later papers that made a huge impact were his model of the weak interaction, ‘Theory of the Fermi interaction’ (R. P. Feynman and M. Gell-Mann Phys. Rev. 109, 193; 1958), and his proposal for quantum computation, ‘Simulating physics with computers’ (R. P. Feynman Int. J. Theor. Phys. 21, 467–488; 1982). In each, he tinkered with variations until he reached definitive conclusions.
+            div(class="quote")
+                p I was born not knowing and have had only a little time to change that here and there.
+            p Feynman was also a renowned educator. Those lucky enough to have attended his lectures have the best sense of how his agile mind operated. He taught a first-year course at the California Institute of Technology (Caltech) in Pasadena: ‘Physics X’, in which students would ask him anything and he’d think on his feet. Feynman loved to astound, and often refused to provide solutions, to spur students on intellectually. The careful notes of attendees have been published as books and articles, bolstering his reputation as a master lecturer. One such from Caltech was the three-volume The Feynman Lectures on Physics (1964). Another, 1959’s The Theory of Fundamental Processes, is based on notes taken by Peter Carruthers and Michael Nauenberg, two students at Cornell University in Ithaca, New York, when Feynman was a visiting lecturer there in 1958. Nauenberg told me how, during the first lecture, Feynman walked in, glanced at the blackboard, wildly erased the equations on it and declared that they would all learn the whole of physics from scratch. Within a few weeks, the course proceeded from elementary quantum mechanics to Feynman’s rules for particle-physics calculations. The Character of Physical Law (1967), another of Feynman’s works, emerged from lectures he delivered at Cornell six years later.
+            p Feynman’s books urge us to explore the world with open-minded inquisitiveness, as if encountering it for the first time. He worked from the idea that all of us could aspire to take the same mental leaps as him. But, of course, not every ambitious young magician can be a Harry Houdini. Whereas other educators might try to coddle those who couldn’t keep up, Feynman never relented. The essence of his philosophy was to find something that you can do well, and put your heart and soul into it. If not physics, then another passion — bongos, perhaps.
+
+        include _partials/footer
+
+block body_end
+    script(type="text/javascript" src="/js/script.js")

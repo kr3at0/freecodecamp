@@ -1,0 +1,101 @@
+/* Padding sizes */
+
+$padding: ( xxxs: 4px, xxs: 8px, xs: 16px, s: 24px, m: 32px, l: 48px, xl: 64px, xxl: 128px);
+$pad-xxxs: map-get($padding, xxxs);
+$pad-xxs: map-get($padding, xxs);
+$pad-xs: map-get($padding, xs);
+$pad-s: map-get($padding, s);
+$pad-m: map-get($padding, m);
+$pad-l: map-get($padding, l);
+$pad-xl: map-get($padding, xl);
+$pad-xxl: map-get($padding, xxl);
+/* Padding sizes */
+
+/* Responsive viewports */
+
+$phone: '(max-width: 480px)';
+$tablet-portrait: '(max-width: 767px)';
+$tablet-landscape-desktop: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px)';
+$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
+$retina: 'screen and (-webkit-min-device-pixel-ratio: 2)';
+@mixin respond-to($media) {
+    @media #{$media} {
+        @content;
+    }
+}
+
+@mixin font($size, $pad: true) {
+    @if $size==p or $size==body {
+        font-size: 1.125rem;
+        line-height: 1.618;
+    }
+    @else if $size==h1 {
+        font-weight: 900;
+        font-size: 3.3rem;
+        line-height: 1.35;
+        @if $pad {
+            margin: 0.8em 0;
+        }
+    }
+    @else if $size==h2 {
+        font-weight: 800;
+        font-size: 2.3rem;
+        line-height: 1.45;
+        @if $pad {
+            margin: 1em 0;
+        }
+    }
+    @else if $size==h3 {
+        font-weight: 700;
+        font-size: 1.85rem;
+        line-height: 1.6;
+        @if $pad {
+            margin: 1.3em 0;
+        }
+    }
+    @else if $size==h4 {
+        font-weight: 700;
+        font-size: 1.55rem;
+        line-height: 1.7;
+        @if $pad {
+            margin: 1.5em 0;
+        }
+    }
+    @else if $size==h5 {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        @if $pad {
+            margin: 1.6em 0;
+        }
+    }
+    @else if $size==h6 {
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        @if $pad {
+            margin: 1.6em 0;
+        }
+    }
+}
+
+%zero-pad {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    @if $top >= 0 {
+        padding-top: $top;
+    }
+    @if $right >= 0 {
+        padding-top: $right;
+    }
+    @if $bottom >= 0 {
+        padding-top: $bottom;
+    }
+    @if $left >= 0 {
+        padding-top: $left;
+    }
+}

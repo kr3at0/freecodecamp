@@ -1,0 +1,77 @@
+{
+  "title": "Richard Feynman",
+  "subtitle": "What I cannot create, I do not understand.",
+  "timeline": [
+
+    {
+      "date": "MAY 11, 19iasdfsfdsdasdf18",
+      "description": "Richard Phillips Feynman is born"
+    },
+
+    {
+      "date": "JAN 1, 1939",
+      "description": "Feynman eanrs Bachelor's Degree circa. 1939"
+    },
+
+    {
+      "date": "JAN 1, 1942",
+      "description": "Feynman joins the Manhattan Project as the leader of the theoretical division circa. 1942"
+    },
+
+    {
+      "date": "JAN 1, 1942",
+      "description": "Feynman earns Ph.D circa. 1942"
+    },
+
+    {
+      "date": "JAN 1, 1942",
+      "description": "Feynman marries highschool sweetheart Arline Greenbaum circa. 1942"
+    },
+
+    {
+      "date": "JAN 1, 1945",
+      "description": "Taught physics at Cornell circa. 1945"
+    },
+
+    {
+      "date": "JUN 16, 1945",
+      "description": "Arline Greenbaum dies"
+    },
+
+    {
+      "date": "JAN 1, 1950",
+      "description": "Feynman moved to CalTech to teach and stayed there; started work in QED circa. 1950"
+    },
+
+    {
+      "date": "JUN 1, 1952",
+      "description": "Feynman remarries Mary Louise Bell circa. 1952"
+    },
+
+    {
+      "date": "JAN 1, 1956",
+      "description": "Feynman and Bell divorce circa. 1956"
+    },
+
+    {
+      "date": "JAN 1, 1960",
+      "description": "Feynman remrries again to Gweneth Howarth circa. 1960"
+    },
+
+    {
+      "date": "DEC 10, 1965",
+      "description": "Feynman wins Nobel Prize in physics and delivers speech"
+    },
+
+    {
+      "date": "JAN 1, 1986",
+      "description": "Feynman becomes a member of the Rogers Commission and discovers the problem circa. 1986"
+    },
+
+    {
+      "date": "FEB 15, 1988",
+      "description": "Feynman passes away at age 69"
+    }
+  ],
+  "test": "test"
+}

@@ -1,0 +1,9 @@
+/* ------ Normalize ----- */
+
+*,
+*:after,
+*:before {}
+
+figure {
+    @extend %zero-pad;
+}

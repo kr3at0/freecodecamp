@@ -1,0 +1,111 @@
+@import "includes/normalize";
+@import "includes/mixins";
+@import "includes/layout";
+@import "includes/colors";
+@import "includes/base";
+@import "includes/typography";
+body {
+    position: relative;
+    border-top: $pad-xxs solid #000;
+    min-width: 400px;
+    overflow-x: hidden;
+}
+
+body:before,
+body:after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(#000, transparent);
+    top: -$pad-xxs;
+    bottom: -$pad-xxs;
+    width: $pad-xxs;
+}
+
+body:before {
+    left: 0;
+}
+
+body:after {
+    right: 0;
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: $pad-s;
+    border-left: 3px solid #000;
+
+    p {
+        @extend %zero-pad;
+    }
+
+}
+
+a {
+    color: #cc6b8e;
+}
+.main-header {
+    padding: $pad-m;
+    border-bottom: 4px double #000;
+    background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+
+    @include respond-to($tablet-portrait) {
+        padding: $pad-m $pad-s;
+    }
+
+    h1,
+    p {
+        @extend %zero-pad;
+    }
+    .subtitle {
+        @include font(h5, false);
+    }
+}
+
+.panel {
+    h4 {
+        @extend %zero-pad;
+        border-bottom: 1px dashed #000;
+    }
+    dl {
+        margin-top: 0;
+        border-right: 1px dashed #000;
+        border-bottom: 1px dashed #000;
+        padding: $pad-xs;
+        dt {
+            font-weight: bold;
+        }
+    }
+}
+
+figure {
+    padding: $pad-xxs;
+    border: 1px solid #000;
+    img { 
+        width: 100%;
+        box-sizing: border-box;
+        border: 7px double #000;
+    }
+
+    figcaption {
+        font-style: italic;
+    }
+}
+
+.content {
+    hyphens: auto;
+    text-align: justify;
+
+    h2 {
+        @include font(h5);
+    }
+}
+
+.quote {
+    padding: $pad-m;
+    text-align: center;
+    p {
+        @include font(h6);
+        font-style: italic;
+    }
+}

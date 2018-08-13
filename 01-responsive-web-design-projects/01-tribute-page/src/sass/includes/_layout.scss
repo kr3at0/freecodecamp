@@ -1,0 +1,44 @@
+.main-header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+    padding-right: $pad-s;
+    max-width: 800px;
+}
+
+.panel {
+    grid-area: sidebar;
+    padding-left: $pad-s;
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 35% 65%;
+    justify-items: stretch;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+
+    @include respond-to($tablet-portrait) {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "header"
+            "content"
+            "sidebar"
+            "footer";
+        & > * {
+            padding: 0 $pad-s;
+        }
+    }
+
+}
